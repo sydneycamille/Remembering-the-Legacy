@@ -1,8 +1,5 @@
-// Fill these in to use the live Supabase database (Project Settings > API).
-// The anon key is safe to publish: Row-Level Security allows public read only.
-// Leave blank to run on the placeholder data in data/sample.json.
 window.CONFIG = {
-  SUPABASE_URL: "",
-  SUPABASE_ANON_KEY: "",
-  REPO_URL: "https://github.com/YOUR-USERNAME/remembering-the-legacy"
+  SUPABASE_URL: "https://xihoccpsneodzymqrvdp.supabase.co/rest/v1/",
+  SUPABASE_ANON_KEY: "sb_publishable_b7fwplg_vzG6b0p4k3oy8g_i622rJex",
+  REPO_URL: "https://github.com/sydneycamille/remembering-the-legacy"
 };
