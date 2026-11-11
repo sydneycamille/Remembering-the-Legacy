@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Remembering the Legacy</title>
+<meta name="description" content="A culturally conscious memorial database and searchable archive. Research and remembrance, openly accessible.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#results">Skip to records</a>
+
+<header class="hero">
+  <p class="kicker">A memorial database and research archive</p>
+  <h1>Remembering the Legacy</h1>
+  <p class="lede">Official archives left many Black Americans out of the record. This archive restores names, places and sources, and presents each person with dignity rather than as a count.</p>
+  <form class="search" role="search" id="search-form">
+    <label for="q">Search by name, place or keyword</label>
+    <input id="q" type="search" autocomplete="off" placeholder="Try a name, a county or a year">
+  </form>
+</header>
+
+<div class="notice" id="notice" role="note">
+  <p><strong>Content notice.</strong> This archive documents racial terror violence. Written accounts stay hidden until you choose to open them.</p>
+  <p class="sample-flag" id="sample-flag" hidden>You are viewing placeholder sample records, not real people. Connect the database to show the archive (see the README).</p>
+</div>
+
+<main class="layout">
+  <aside class="filters" aria-label="Filters">
+    <h2>Filter records</h2>
+    <label for="f-state">State</label>
+    <select id="f-state"><option value="">All states</option></select>
+    <label for="f-decade">Decade</label>
+    <select id="f-decade"><option value="">All decades</option></select>
+    <fieldset id="f-tags"><legend>Tags</legend></fieldset>
+    <button type="button" id="reset" class="link">Clear all filters</button>
+  </aside>
+
+  <section aria-labelledby="results-h">
+    <h2 id="results-h" class="count"><span id="count">0</span> records</h2>
+    <div id="results" class="grid" aria-live="polite"></div>
+    <p id="empty" class="empty" hidden>No records match. Check the spelling, remove a filter, or search by county or year.</p>
+  </section>
+</main>
+
+<section class="submit" aria-labelledby="sub-h">
+  <h2 id="sub-h">Add a record or ask for a change</h2>
+  <p>Every submission is reviewed and needs a verifiable source before it is published. Family members can request edits or removal of any record.</p>
+  <form id="sub-form">
+    <label for="s-type">What do you need?</label>
+    <select id="s-type" name="type"><option value="new_record">Suggest a new record</option><option value="correction">Correct a record</option><option value="removal">Request removal</option></select>
+    <label for="s-details">Details and sources</label>
+    <textarea id="s-details" name="details" rows="4" required></textarea>
+    <label for="s-contact">Your email (optional, never published)</label>
+    <input id="s-contact" name="contact" type="email">
+    <button type="submit">Send for review</button>
+    <p id="sub-msg" role="status"></p>
+  </form>
+</section>
+
+<footer>
+  <p>Open public access. No commercial use of data. Sources are cited on every record.</p>
+  <p>Project by Sydney Beane. Source code: <a id="repo" href="#">GitHub repository</a></p>
+</footer>
+
+<dialog id="dlg" aria-labelledby="dlg-title"></dialog>
+
+<script src="https://cdn.jsdelivr.net/npm/flexsearch@0.7.43/dist/flexsearch.bundle.min.js"></script>
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

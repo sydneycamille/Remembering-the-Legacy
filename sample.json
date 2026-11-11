@@ -1,0 +1,7 @@
+[
+{"id":1,"full_name":"Sample Person One","date":"1921-06-02","county":"Example County","state":"Alabama","tags":["Verified","Family consulted"],"narrative":"Placeholder text. Replace with a sourced, respectful account.","sources":["Placeholder archival source A"]},
+{"id":2,"full_name":"Sample Person Two","date":"1934-09-14","county":"Sample County","state":"Georgia","tags":["Verified"],"narrative":"Placeholder text. Replace with a sourced, respectful account.","sources":["Placeholder archival source B"]},
+{"id":3,"full_name":"Sample Person Three","date":"1918-03-21","county":"Test County","state":"Mississippi","tags":["Needs further research"],"narrative":"Placeholder text. Replace with a sourced, respectful account.","sources":["Placeholder newspaper citation"]},
+{"id":4,"full_name":"Sample Person Four","date":"1927-11-05","county":"Demo County","state":"Tennessee","tags":["Verified","Memorial site exists"],"narrative":"Placeholder text. Replace with a sourced, respectful account.","sources":["Placeholder court record"]},
+{"id":5,"full_name":"Sample Person Five","date":"1942-07-30","county":"Example County","state":"Georgia","tags":["Family consulted"],"narrative":"Placeholder text. Replace with a sourced, respectful account.","sources":["Placeholder oral history"]}
+]
