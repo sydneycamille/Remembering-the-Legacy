@@ -16,7 +16,7 @@ There are no npm dependencies to install.
 
 ## Run locally
 ```bash
-git clone https://github.com/YOUR-USERNAME/remembering-the-legacy
+git clone https://github.com/sydneycamille/remembering-the-legacy
 cd remembering-the-legacy
 python3 -m http.server 8000      # then open http://localhost:8000
 ```
