@@ -47,3 +47,6 @@ supabase/schema.sql         tables, indexes, RLS policies
 
 ## Roadmap
 Admin dashboard UI for moderation (Milestone M4), accessibility audit (M5).
+
+## Active Website Link
+ https://sydneycamille.github.io/Remembering-the-Legacy/
